@@ -18,7 +18,7 @@ class Solution2:
         head.next.next=head
         head.next=None      #因为上面是head.next.next，所以这里应当释放掉head.next
         return nowNode
-#解法3：提到反转自然就有递归。。。
+#解法3：提到反转自然就有栈。。。
 class Solution3:
     def reverseList(self, head: ListNode) -> ListNode:
         stack=[None]
